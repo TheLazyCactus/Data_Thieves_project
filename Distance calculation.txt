@@ -1,0 +1,48 @@
+import pandas as pd
+from geopy.distance import geodesic
+from geopy.geocoders import Nominatim
+
+# Address 1 and DataFrame 2
+address1 = "1600 Amphitheatre Parkway, Mountain View, CA"
+df2 = pd.DataFrame({'Address': [
+    '1 Infinite Loop, Cupertino, CA',
+    '500 El Camino Real, Santa Clara, CA',
+    '100 Market St, San Francisco, CA',
+    '200 E Main St, Los Angeles, CA'
+]})
+
+# Initialize geolocator
+geolocator = Nominatim(user_agent="distance_filter")
+
+# Function to geocode addresses
+def get_coordinates(address):
+    try:
+        location = geolocator.geocode(address)
+        if location:
+            return (location.latitude, location.longitude)
+        else:
+            return None
+    except:
+        return None
+
+# Get coordinates for Address 1
+address1_coords = get_coordinates(address1)
+
+# Add coordinates to DataFrame 2
+df2['Coordinates'] = df2['Address'].apply(get_coordinates)
+
+# Function to calculate distance
+def calculate_distance(coord1, coord2):
+    try:
+        return geodesic(coord1, coord2).kilometers
+    except:
+        return None
+
+# Calculate distances from Address 1
+df2['Distance (km)'] = df2['Coordinates'].apply(lambda x: calculate_distance(address1_coords, x))
+
+# Filter addresses within 50 km
+filtered_df = df2[df2['Distance (km)'] <= 50]
+
+# Output the results
+print(filtered_df)
