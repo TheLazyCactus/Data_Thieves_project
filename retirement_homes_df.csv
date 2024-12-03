@@ -1,21 +1,21 @@
-name,place_id,rating,types,vicinity,plus_code_compound_code,phone_number,opening_time,closing_time
-South Bay Senior Living,ChIJ08bl33o13YARie9dW9iUzNo,5.0,"['point_of_interest', 'health', 'establishment']","22711 S Vermont Ave, Torrance","RP95+MM Torrance, California, USA",(310) 320-3318,8:00 AM,5:30 PM
-The Gardens at Park Balboa,ChIJOaR2Bz6XwoARPxTcthfjnyc,4.7,"['point_of_interest', 'health', 'establishment']","7046 Kester Ave, Van Nuys","5GXV+G6 Van Nuys, Los Angeles, CA, USA",(818) 787-0462,7:00 AM,8:30 PM
-Royal Oaks,ChIJaYJWB_3YwoARCpPku9eJq9s,4.1,"['point_of_interest', 'health', 'establishment']","1763 Royal Oaks Dr N, Duarte","42VM+H4 Duarte, California, USA",(626) 359-9371,N/A,N/A
-Claremont Place,ChIJEX3H5vIxw4ARPSXaEvCe8FU,4.5,"['point_of_interest', 'health', 'establishment']","120 W San Jose Ave, Claremont","37JM+XR Claremont, California, USA",(909) 480-8616,N/A,N/A
-Atria Covina,ChIJ_SaeGj4ow4ARRPT6OJ3R7xM,5.0,"['point_of_interest', 'health', 'establishment']","825 W San Bernardino Rd, Covina","33QV+R9 Covina, California, USA",(626) 967-9621,7:00 AM,8:00 PM
-The Watermark at Beverly Hills,ChIJKWnsyVO5woARLQt81ltcsvs,4.9,"['point_of_interest', 'health', 'establishment']","220 N Clark Dr, Beverly Hills","3J98+W6 Beverly Hills, California, USA",(310) 860-9234,N/A,N/A
-Solheim Senior Community,ChIJf_cFvWfBwoARTew3slsyQUU,4.4,"['church', 'place_of_worship', 'point_of_interest', 'health', 'establishment']","2236 Merton Ave, Los Angeles","4QQM+3P Los Angeles, California, USA",(323) 257-7518,8:30 AM,5:00 PM
-Brookdale Santa Monica Gardens,ChIJKVovmMCkwoARIHUK2x0_j8E,4.2,"['point_of_interest', 'health', 'establishment']","851 2nd St, Santa Monica","2FCW+V2 Santa Monica, California, USA",(310) 853-4369,N/A,N/A
-Pacifica Senior Living Santa Clarita,ChIJ3fU4_MCGwoARNxZM_wlEHj0,4.4,"['point_of_interest', 'health', 'establishment']","24305 Lyons Ave, Santa Clarita","9CHR+M4 Santa Clarita, California, USA",(661) 338-5979,N/A,N/A
-Carmel Village,ChIJO691vhMn3YARro8IMyF62NM,4.5,"['point_of_interest', 'health', 'establishment']","17077 San Mateo St, Fountain Valley","P28X+22 Fountain Valley, California, USA",(714) 962-6667,N/A,N/A
-Atria Golden Creek,ChIJxW9V9q_d3IARWMGD8wDj20c,4.5,"['point_of_interest', 'health', 'establishment']","33 Creek Rd, Irvine","M6G2+8X Irvine, California, USA",(949) 786-5665,8:00 AM,8:00 PM
-Brookdale Ocean House,ChIJq7XG9CqlwoAR6iWzCjrBVQg,4.3,"['point_of_interest', 'health', 'establishment']","2107 Ocean Ave, Santa Monica","2G46+38 Santa Monica, California, USA",(310) 399-3227,N/A,N/A
-The Variel of Woodland Hills,ChIJ-cYACCufwoARycl4xZYahlM,4.3,"['point_of_interest', 'health', 'establishment']","6233 Variel Ave, Woodland Hills","5CM4+MP Woodland Hills, Los Angeles, CA, USA",(818) 651-6018,9:00 AM,6:00 PM
-The Oaks of Pasadena,ChIJ13qg7l3bwoAREJEk7VxgSIM,4.1,"['point_of_interest', 'health', 'establishment']","2954 E Del Mar Blvd, Pasadena","4WR6+G2 Pasadena, California, USA",(626) 356-2600,8:30 AM,5:00 PM
-Rowntree Gardens,ChIJ6bckp-0o3YARvmnSsJ2sQJM,4.3,"['point_of_interest', 'health', 'establishment']","12151 Dale St, Stanton","Q2P8+C6 Stanton, California, USA",(714) 530-9100,9:00 AM,5:00 PM
-Atria Newport Beach,ChIJE2Vf0Koh3YARnEjK8M0shyo,4.8,"['point_of_interest', 'health', 'establishment']","393 Hospital Rd, Newport Beach","J3GC+FF Newport Beach, California, USA",(949) 642-5861,8:00 AM,8:00 PM
-Regents Point,ChIJsdqJegre3IARH1NL08pmkC0,4.3,"['point_of_interest', 'health', 'establishment']","19191 Harvard Ave, Irvine","M529+W4 Irvine, California, USA",(949) 854-9500,N/A,N/A
-Clearwater at South Bay,ChIJE-BTH9lK3YAROL6WL4cgQY4,4.5,"['point_of_interest', 'health', 'establishment']","3210 Sepulveda Blvd, Torrance","RMF4+PP Torrance, California, USA",(424) 571-2603,N/A,N/A
-Atria Tarzana,ChIJlwFyramZwoARCsrLX5nTNhg,4.9,"['point_of_interest', 'health', 'establishment']","5325 Etiwanda Ave, Tarzana","5F99+4H Tarzana, Los Angeles, CA, USA",(818) 344-4164,8:00 AM,8:00 PM
-Brookdale Uptown Whittier,ChIJFePr9ezTwoARINA2tHLLcsA,4.1,"['point_of_interest', 'health', 'establishment']","13250 Philadelphia St, Whittier","XXH8+G6 Whittier, California, USA",(562) 945-3904,N/A,N/A
+﻿name,place_id,rating,types,vicinity,plus_code_compound_code,phone_number,opening_time,closing_time
+"South Bay Senior Living,ChIJ08bl33o13YARie9dW9iUzNo,5.0,""['point_of_interest', 'health', 'establishment']"",""22711 S Vermont Ave, Torrance"",""RP95+MM Torrance, California, USA"",(310) 320-3318,8:00â€¯AM,5:30â€¯PM"
+"The Gardens at Park Balboa,ChIJOaR2Bz6XwoARPxTcthfjnyc,4.7,""['point_of_interest', 'health', 'establishment']"",""7046 Kester Ave, Van Nuys"",""5GXV+G6 Van Nuys, Los Angeles, CA, USA"",(818) 787-0462,7:00â€¯AM,8:30â€¯PM"
+"Royal Oaks,ChIJaYJWB_3YwoARCpPku9eJq9s,4.1,""['point_of_interest', 'health', 'establishment']"",""1763 Royal Oaks Dr N, Duarte"",""42VM+H4 Duarte, California, USA"",(626) 359-9371,N/A,N/A"
+"Claremont Place,ChIJEX3H5vIxw4ARPSXaEvCe8FU,4.5,""['point_of_interest', 'health', 'establishment']"",""120 W San Jose Ave, Claremont"",""37JM+XR Claremont, California, USA"",(909) 480-8616,N/A,N/A"
+"Atria Covina,ChIJ_SaeGj4ow4ARRPT6OJ3R7xM,5.0,""['point_of_interest', 'health', 'establishment']"",""825 W San Bernardino Rd, Covina"",""33QV+R9 Covina, California, USA"",(626) 967-9621,7:00â€¯AM,8:00â€¯PM"
+"The Watermark at Beverly Hills,ChIJKWnsyVO5woARLQt81ltcsvs,4.9,""['point_of_interest', 'health', 'establishment']"",""220 N Clark Dr, Beverly Hills"",""3J98+W6 Beverly Hills, California, USA"",(310) 860-9234,N/A,N/A"
+"Solheim Senior Community,ChIJf_cFvWfBwoARTew3slsyQUU,4.4,""['church', 'place_of_worship', 'point_of_interest', 'health', 'establishment']"",""2236 Merton Ave, Los Angeles"",""4QQM+3P Los Angeles, California, USA"",(323) 257-7518,8:30â€¯AM,5:00â€¯PM"
+"Brookdale Santa Monica Gardens,ChIJKVovmMCkwoARIHUK2x0_j8E,4.2,""['point_of_interest', 'health', 'establishment']"",""851 2nd St, Santa Monica"",""2FCW+V2 Santa Monica, California, USA"",(310) 853-4369,N/A,N/A"
+"Pacifica Senior Living Santa Clarita,ChIJ3fU4_MCGwoARNxZM_wlEHj0,4.4,""['point_of_interest', 'health', 'establishment']"",""24305 Lyons Ave, Santa Clarita"",""9CHR+M4 Santa Clarita, California, USA"",(661) 338-5979,N/A,N/A"
+"Carmel Village,ChIJO691vhMn3YARro8IMyF62NM,4.5,""['point_of_interest', 'health', 'establishment']"",""17077 San Mateo St, Fountain Valley"",""P28X+22 Fountain Valley, California, USA"",(714) 962-6667,N/A,N/A"
+"Atria Golden Creek,ChIJxW9V9q_d3IARWMGD8wDj20c,4.5,""['point_of_interest', 'health', 'establishment']"",""33 Creek Rd, Irvine"",""M6G2+8X Irvine, California, USA"",(949) 786-5665,8:00â€¯AM,8:00â€¯PM"
+"Brookdale Ocean House,ChIJq7XG9CqlwoAR6iWzCjrBVQg,4.3,""['point_of_interest', 'health', 'establishment']"",""2107 Ocean Ave, Santa Monica"",""2G46+38 Santa Monica, California, USA"",(310) 399-3227,N/A,N/A"
+"The Variel of Woodland Hills,ChIJ-cYACCufwoARycl4xZYahlM,4.3,""['point_of_interest', 'health', 'establishment']"",""6233 Variel Ave, Woodland Hills"",""5CM4+MP Woodland Hills, Los Angeles, CA, USA"",(818) 651-6018,9:00â€¯AM,6:00â€¯PM"
+"The Oaks of Pasadena,ChIJ13qg7l3bwoAREJEk7VxgSIM,4.1,""['point_of_interest', 'health', 'establishment']"",""2954 E Del Mar Blvd, Pasadena"",""4WR6+G2 Pasadena, California, USA"",(626) 356-2600,8:30â€¯AM,5:00â€¯PM"
+"Rowntree Gardens,ChIJ6bckp-0o3YARvmnSsJ2sQJM,4.3,""['point_of_interest', 'health', 'establishment']"",""12151 Dale St, Stanton"",""Q2P8+C6 Stanton, California, USA"",(714) 530-9100,9:00â€¯AM,5:00â€¯PM"
+"Atria Newport Beach,ChIJE2Vf0Koh3YARnEjK8M0shyo,4.8,""['point_of_interest', 'health', 'establishment']"",""393 Hospital Rd, Newport Beach"",""J3GC+FF Newport Beach, California, USA"",(949) 642-5861,8:00â€¯AM,8:00â€¯PM"
+"Regents Point,ChIJsdqJegre3IARH1NL08pmkC0,4.3,""['point_of_interest', 'health', 'establishment']"",""19191 Harvard Ave, Irvine"",""M529+W4 Irvine, California, USA"",(949) 854-9500,N/A,N/A"
+"Clearwater at South Bay,ChIJE-BTH9lK3YAROL6WL4cgQY4,4.5,""['point_of_interest', 'health', 'establishment']"",""3210 Sepulveda Blvd, Torrance"",""RMF4+PP Torrance, California, USA"",(424) 571-2603,N/A,N/A"
+"Atria Tarzana,ChIJlwFyramZwoARCsrLX5nTNhg,4.9,""['point_of_interest', 'health', 'establishment']"",""5325 Etiwanda Ave, Tarzana"",""5F99+4H Tarzana, Los Angeles, CA, USA"",(818) 344-4164,8:00â€¯AM,8:00â€¯PM"
+"Brookdale Uptown Whittier,ChIJFePr9ezTwoARINA2tHLLcsA,4.1,""['point_of_interest', 'health', 'establishment']"",""13250 Philadelphia St, Whittier"",""XXH8+G6 Whittier, California, USA"",(562) 945-3904,N/A,N/A"
