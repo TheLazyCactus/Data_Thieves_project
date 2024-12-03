@@ -10,8 +10,11 @@ import folium
 
 st.set_page_config(layout="wide")
 
-retirement_homes_df = pd.read_csv(r'C:\Users\biave\Documents\IronHack\Quests\Data_Thieves_Mine\retirement_homes_df.csv')
-schools_df = pd.read_csv(r'C:\Users\biave\Documents\IronHack\Quests\Data_Thieves_Mine\schools_df.csv')
+retirement_homes_df = pd.read_csv('https://raw.githubusercontent.com/TheLazyCactus/Data_Thieves_project/refs/heads/main/retirement_homes_df.csv')
+schools_df = pd.read_csv('https://raw.githubusercontent.com/TheLazyCactus/Data_Thieves_project/refs/heads/main/schools_df.csv')
+#retirement_location = 'https://raw.githubusercontent.com/TheLazyCactus/Data_Thieves_project/refs/heads/main/retirement_coordinate.csv'
+#school_location = 'https://raw.githubusercontent.com/TheLazyCactus/Data_Thieves_project/refs/heads/main/school_coordinate.csv'
+cat_location = 'https://raw.githubusercontent.com/TheLazyCactus/Data_Thieves_project/refs/heads/main/cat_coordinate.csv'
 
 map = folium.Map(location=(34.04621475184492, -118.27514966412589))
 
@@ -81,6 +84,47 @@ if 'location' in locals() and not selection == "":
         icon=folium.Icon(icon=icon_type, prefix='fa', color=color)
 ).add_to(map)
 
+#Function to transform the selection in coordinate
+from geopy.geocoders import Nominatim
+
+def address_to_coordinates(address):
+    """
+    Transforms a given address into geographic coordinates (latitude and longitude).
+    
+    Args:
+        address (str): The address to be geocoded.
+        
+    Returns:
+        tuple: A tuple containing latitude and longitude as floats.
+               Returns None if the address cannot be geocoded.
+    """
+    try:
+        # Initialize geolocator
+        geolocator = Nominatim(user_agent="address_to_coordinates_app")
+        # Geocode the address
+        location = geolocator.geocode(address)
+        if location:
+            return location.latitude, location.longitude
+        else:
+            print("Address not found.")
+            return None
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+
+coordinate = address_to_coordinates(location)
+
+#function to calculate the distance
+from geopy.distance import geodesic
+def calculate_distance(coord):
+    '''selected coordinate and coord need to be topple of lat, long  '''
+    try:
+        return geodesic(coordinate, coord).kilometers
+    except:
+        return None
+    
+cat_location['Distance'] = cat_location['Coordinate'].apply(calculate_distance)
+filtered_cat = cat_location[cat_location['Distance'] < 20]
 
 map_html = 'map.html'
 map.save(map_html)
