@@ -64,8 +64,8 @@ if first_option == 'Retirement Home':
 
         folium.Marker(
             location=[location['geometry_location_lat'], location['geometry_location_lng']],
-            tooltip=location,
-            popup=location,
+            tooltip=location['name'],
+            popup=location['name'],
             icon=folium.Icon(icon='home', prefix='fa', color='darkgreen')
 ).add_to(map)
         
@@ -108,35 +108,49 @@ second_option = st.sidebar.selectbox(
     '**What shelter would you like to choose?** :black_cat:', 
     (dogs_df["Shelter"].drop_duplicates().tolist()),
     index = None,
-    placeholder= 'Please select one of the available options...'
+    placeholder= 'Please select one of the available options...',
+            
 )
+
 
 show_all_shelters = st.sidebar.checkbox('Show every shelter', value=False)
 
 if show_all_shelters:
+    # Add markers for all shelters
     add_markers_dogs(dogs_df, 'paw', 'beige')
 else:
     if second_option:
-        # Add markers for all rows
+        # Add markers for all rows in the filtered data
         for _, row in dogs_df.iterrows():
             folium.Marker(
                 location=[row['lat'], row['lng']],  # Pass lat and lng as a list
-                popup=row['Shelter']  # Optional: Add a popup with the name
+                popup=row['Shelter']  # Display shelter name in popup
             ).add_to(map)
-    
-        # Get the specific row matching 'second_option'
-        location = dogs_df[dogs_df['Shelter'] == second_option].iloc[0]
-        lat = location['lat']  # Extract lat from the filtered row
-        lng = location['lng']  # Extract lng from the filtered row
-    
-        # Add the highlighted marker
-        folium.Marker(
-            location=[lat, lng],
-            tooltip=second_option,
-            popup=second_option,
-            icon=folium.Icon(icon='paw', prefix='fa', color='beige')
-        ).add_to(map)
-
+        
+        # Highlight the specific shelter matching 'second_option'
+        selected_shelter_data = dogs_df[dogs_df['Shelter'] == second_option]
+        
+        if not selected_shelter_data.empty:
+            # Extract first row to get lat and lng for the marker
+            location = selected_shelter_data.iloc[0]
+            lat = location['lat']
+            lng = location['lng']
+            
+            # Add a highlighted marker for the selected shelter
+            folium.Marker(
+                location=[lat, lng],
+                tooltip=second_option,
+                popup=second_option,
+                icon=folium.Icon(icon='paw', prefix='fa', color='beige')
+            ).add_to(map)
+        
+        # Display details for the selected shelter
+        st.sidebar.markdown(f"**Shelter Name:** {second_option}")
+        st.sidebar.markdown(f"**Address:** {location['Location']}")  # Assuming one location per shelter
+        
+    else:
+        # If no shelter is selected, show a message
+        st.sidebar.markdown("No shelter selected.")
 
 map_html = 'map.html'
 map.save(map_html)
@@ -171,3 +185,4 @@ if second_option:
             st.write(f"**Breed:** {row['Breed']}")
             st.write(f"**Phone:** {row['Telephone']}")
             st.write(f"**Email:** {row['Email']}")
+
