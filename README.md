@@ -89,3 +89,4 @@ By leveraging real-time data and geolocation tools, this service provides a **pr
 
 If you’re passionate about animal welfare, community well-being, and data-driven solutions, join us in making a difference. Together, we can create powerful connections between people and animals, bringing joy, companionship, and hope to countless lives.
 
+Updated README for project documentation.
